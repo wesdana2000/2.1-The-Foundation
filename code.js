@@ -1,3 +1,3 @@
 function updateText(){
-  document.getElementsById("heading").innerHTML = "JavaScript is awesome!";
+  document.getElementsById("heading").innerHTML = " JavaScript is awesome!";
 }
