@@ -1,0 +1,59 @@
+<!-- Name: Wesston Dana -->
+<!-- File: game.html -->
+<!-- Description: Craps game for Quark's Casino -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and page title -->
+    <meta charset="UTF-8">
+    <title>Quark's Casino - Craps</title>
+
+    <!-- Simple styling for user experience -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #0b3d0b;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main page heading -->
+    <h1>🎲 Quark's Casino – Craps Table 🎲</h1>
+
+    <!-- Instructions for the user -->
+    <p>Press the button to roll the dice and test your luck!</p>
+
+    <!-- Form required for user input -->
+    <!-- onsubmit calls the JavaScript function -->
+    <form onsubmit="return playCraps();">
+
+        <!-- Button that submits the form -->
+        <button type="submit">Roll the Dice</button>
+
+    </form>
+
+    <!-- Output area updated by JavaScript -->
+    <div id="output"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="code.js"></script>
+
+</body>
+</html>
