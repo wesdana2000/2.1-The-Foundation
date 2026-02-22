@@ -1,0 +1,88 @@
+<!-- Name: Wesston Dana -->
+<!-- File: strings.html -->
+<!-- Description: User validation and secret message page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Page title -->
+    <title>Secure Access Portal</title>
+
+    <!-- Simple styling for good user experience -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <h1>🔐 Secure Access Portal</h1>
+
+    <div class="container">
+
+        <!-- Form that collects ALL user input -->
+        <!-- onsubmit calls JavaScript validation function -->
+        <form onsubmit="return validateForm();">
+
+            <!-- First Name input -->
+            <input type="text" id="firstName" placeholder="First Name">
+
+            <br>
+
+            <!-- Last Name input -->
+            <input type="text" id="lastName" placeholder="Last Name">
+
+            <br>
+
+            <!-- Zip Code input -->
+            <input type="text" id="zipCode" placeholder="5-digit Zip Code">
+
+            <br>
+
+            <!-- One single submit button -->
+            <button type="submit">Unlock Secret</button>
+
+        </form>
+
+        <!-- Area where validation and secret message appear -->
+        <div id="message"></div>
+
+    </div>
+
+    <!-- Linking external JavaScript file -->
+    <script src="strings.js"></script>
+
+</body>
+</html>
