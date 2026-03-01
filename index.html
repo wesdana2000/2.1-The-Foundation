@@ -1,17 +1,73 @@
+<!-- Name: Wesston Dana -->
+<!-- File: index.html -->
+<!-- Description: Meme image movement with Start and Stop buttons -->
+
 <!DOCTYPE html>
-<html> Wesston Dana <!-- this is an HTML comment -->
+<html lang="en">
+
 <head>
-<title>Wesston Dana</title>
-  <link rel="stylesheet" href="main.css">
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Page title -->
+    <title>Moving Meme Machine</title>
+
+    <!-- Styling for user experience -->
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #memeImage {
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 200px;
+        }
+
+        #statusMessage {
+            margin-top: 20px;
+            font-size: 18px;
+            color: cyan;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>CPL Dana</h1>
-<p>USMC Infantry Machine Gunner 2019-2023</p>
-<p>
-  <img id="SpongbobMeme" src="SpongebobMeme.webp">
+    <!-- Page heading -->
+    <h1>🎉 Meme Movement Machine 🎉</h1>
 
-</p>
+    <!-- Form required for user interaction -->
+    <!-- Only one submit button allowed -->
+    <form onsubmit="return handleStart();">
+
+        <!-- Start button (submit type) -->
+        <button id="startBtn" type="submit">Start</button>
+
+        <!-- Stop button (regular button) -->
+        <button id="stopBtn" type="button" onclick="handleStop();" disabled>Stop</button>
+
+    </form>
+
+    <!-- Meme image -->
+    <img id="memeImage" src="meme.jpg" alt="Moving Meme">
+
+    <!-- Status output area -->
+    <div id="statusMessage"></div>
+
+    <!-- External JavaScript file -->
+    <script src="move.js"></script>
 
 </body>
 </html>
