@@ -1,1 +1,90 @@
+<!-- Name: Wesston Dana -->
+<!-- File: palindrome.html -->
+<!-- Description: Checks if a word or phrase is a palindrome -->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Page title -->
+    <title>Palindrome Checker</title>
+
+    <!-- Styling for good user experience -->
+    <style>
+
+        /* Style for the whole page */
+        body {
+            background-color: #1f1f2e;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for input box */
+        input {
+            padding: 10px;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        /* Style for button */
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Image styling */
+        img {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Output message styling */
+        #resultMessage {
+            margin-top: 20px;
+            font-size: 20px;
+            color: cyan;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Page heading -->
+    <h1>🔎 Palindrome Checker</h1>
+
+    <!-- Instructions for the user -->
+    <p>Enter a word or phrase to see if it reads the same forward and backward.</p>
+
+    <!-- Image creative element -->
+    <img src="meme.jpg" alt="Palindrome Meme">
+
+    <!-- Form for user input -->
+    <form>
+
+        <!-- Text input for the palindrome word -->
+        <input type="text" id="userInput" placeholder="Enter a word or phrase">
+
+        <br>
+
+        <!-- Button that calls the JavaScript function -->
+        <button type="button" onclick="checkPalindrome()">Check Palindrome</button>
+
+    </form>
+
+    <!-- Area where JavaScript prints the result -->
+    <div id="resultMessage"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="palindrome.js"></script>
+
+</body>
+
+</html>
