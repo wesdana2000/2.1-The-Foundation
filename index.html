@@ -1,22 +1,24 @@
 <!-- Name: Wesston Dana -->
 <!-- File: index.html -->
-<!-- Description: Meme image movement with Start and Stop buttons -->
+<!-- Description: Meme movement with sound -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <!-- Character encoding -->
     <meta charset="UTF-8">
 
     <!-- Page title -->
-    <title>Moving Meme Machine</title>
+    <title>Sound Meme Machine</title>
 
-    <!-- Styling for user experience -->
+    <!-- Styling for better UX -->
     <style>
+
         body {
-            background-color: #222;
-            color: white;
+            background-color: black;
+            color: lime;
             text-align: center;
             font-family: Arial, sans-serif;
         }
@@ -24,50 +26,52 @@
         button {
             padding: 10px 20px;
             margin: 10px;
-            font-size: 16px;
             cursor: pointer;
         }
 
         #memeImage {
             position: absolute;
+            width: 200px;
             left: 100px;
             top: 150px;
-            width: 200px;
         }
 
-        #statusMessage {
+        #status {
             margin-top: 20px;
             font-size: 18px;
-            color: cyan;
         }
+
     </style>
+
 </head>
 
 <body>
 
     <!-- Page heading -->
-    <h1>🎉 Meme Movement Machine 🎉</h1>
+    <h1>🔊 Sound Meme Machine 🔊</h1>
 
-    <!-- Form required for user interaction -->
-    <!-- Only one submit button allowed -->
-    <form onsubmit="return handleStart();">
+    <!-- Form required -->
+    <form onsubmit="return startEverything();">
 
-        <!-- Start button (submit type) -->
+        <!-- Start button -->
         <button id="startBtn" type="submit">Start</button>
 
-        <!-- Stop button (regular button) -->
-        <button id="stopBtn" type="button" onclick="handleStop();" disabled>Stop</button>
+        <!-- Stop button -->
+        <button id="stopBtn" type="button" onclick="stopEverything();" disabled>Stop</button>
 
     </form>
 
     <!-- Meme image -->
-    <img id="memeImage" src="meme.jpg" alt="Moving Meme">
+    <img id="memeImage" src="meme.jpg" alt="Meme">
 
-    <!-- Status output area -->
-    <div id="statusMessage"></div>
+    <!-- Status message -->
+    <div id="status"></div>
 
-    <!-- External JavaScript file -->
-    <script src="move.js"></script>
+    <!-- Audio element -->
+    <audio id="soundEffect" src="sound.mp3"></audio>
+
+    <!-- External JS -->
+    <script src="sound.js"></script>
 
 </body>
 </html>
