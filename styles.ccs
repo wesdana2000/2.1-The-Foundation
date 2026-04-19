@@ -1,0 +1,28 @@
+/* File: styles.css */
+/* Description: Styles for table and page */
+
+body {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+th {
+    background-color: #444;
+}
+
+tr:nth-child(even) {
+    background-color: #2e2e40;
+}
