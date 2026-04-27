@@ -1,17 +1,23 @@
-/* File: styles.css */
-/* Description: Styles for table and page */
-
 body {
     background-color: #1e1e2f;
     color: white;
+    font-family: Arial;
     text-align: center;
-    font-family: Arial, sans-serif;
+}
+
+nav {
+    margin: 20px;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
 }
 
 table {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 60%;
+    width: 70%;
 }
 
 th, td {
@@ -19,10 +25,8 @@ th, td {
     padding: 10px;
 }
 
-th {
-    background-color: #444;
-}
-
-tr:nth-child(even) {
-    background-color: #2e2e40;
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
 }
