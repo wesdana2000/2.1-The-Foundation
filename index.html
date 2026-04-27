@@ -1,6 +1,6 @@
 <!-- Name: Wesston Dana -->
 <!-- File: index.html -->
-<!-- Description: Meme movement with sound -->
+<!-- Description: Home page with navigation and footer for final project -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,67 +11,61 @@
     <meta charset="UTF-8">
 
     <!-- Page title -->
-    <title>Sound Meme Machine</title>
+    <title>Home Page</title>
 
-    <!-- Styling for better UX -->
-    <style>
-
-        body {
-            background-color: black;
-            color: lime;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        #memeImage {
-            position: absolute;
-            width: 200px;
-            left: 100px;
-            top: 150px;
-        }
-
-        #status {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
-    <!-- Page heading -->
-    <h1>🔊 Sound Meme Machine 🔊</h1>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My Final Project Website</h1>
+    </header>
 
-    <!-- Form required -->
-    <form onsubmit="return startEverything();">
+    <!-- Navigation section -->
+    <nav>
+        <h2>Navigation</h2>
 
-        <!-- Start button -->
-        <button id="startBtn" type="submit">Start</button>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./table.html">Table</a><br>
+        <a href="./game.html">Craps Game</a><br>
+        <a href="./strings.html">Strings</a><br>
+        <a href="./palindrome.html">Palindrome</a><br>
+        <a href="./final.html">Final Project</a><br>
+    </nav>
 
-        <!-- Stop button -->
-        <button id="stopBtn" type="button" onclick="stopEverything();" disabled>Stop</button>
+    <!-- Main page content -->
+    <main>
 
-    </form>
+        <p>
+            Welcome to my website for my UAT programming assignments.
+            This site includes my HTML, CSS, JavaScript, and final project work
+            completed throughout the semester.
+        </p>
 
-    <!-- Meme image -->
-    <img id="memeImage" src="meme.jpg" alt="Meme">
+        <p>
+            You can use the navigation menu above to visit each project page,
+            including my meme page, boards objectives page, dynamic table,
+            Craps game, palindrome checker, and final JavaScript project.
+        </p>
 
-    <!-- Status message -->
-    <div id="status"></div>
+        <!-- Creative element: meme image -->
+        <img src="meme.jpg" alt="Fun Meme Image" width="300">
 
-    <!-- Audio element -->
-    <audio id="soundEffect" src="sound.mp3"></audio>
+    </main>
 
-    <!-- External JS -->
-    <script src="sound.js"></script>
+    <!-- Footer section -->
+    <footer>
+        Wesston Dana<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
 
 </body>
+
 </html>
